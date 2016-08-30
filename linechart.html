@@ -1,0 +1,20 @@
+<html data-ng-app="myApp">
+<head>
+  <title>Google Line Chart</title>
+  <link rel="stylesheet" href="lib/css/all.css" />
+</head>
+<body>
+<div class="wrapper">
+  <div data-ng-controller="appController">
+    <div class="container"><select style="width:250px; margin:30px auto;" class="form-control" ng-model="dataset" ng-options="ds.title for ds in datasets"></select></div>
+    <div id="chart_div"></div>
+  </div>
+  </div>
+  <!--Js Goes Here-->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="lib/js/angular.min.js"></script>
+  <script type="text/javascript" src="lib/js/app.js"></script>
+  <!--Controller-->
+  <script type="text/javascript" src="lib/js/appController.js"></script>
+</body>
+</html>
